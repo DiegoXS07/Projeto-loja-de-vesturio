@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;700&family=Inter:wght@500&family=Lato:wght@300&family=Montserrat&family=Noto+Sans:wght@600&family=Open+Sans:wght@800&family=Oswald:wght@500&family=Roboto:wght@300;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;700&family=Inter:wght@500&family=Kanit:wght@500&family=Lato:wght@300&family=Montserrat&family=Noto+Sans:wght@600&family=Open+Sans:wght@800&family=Oswald:wght@500&family=Roboto+Slab:wght@500&family=Roboto:wght@300;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alexandria&family=Inter+Tight:wght@400;700&family=Inter:wght@500&family=Kanit:wght@500&family=Lato:wght@300&family=Montserrat&family=Noto+Sans:wght@600&family=Open+Sans:wght@800&family=Oswald:wght@500&family=Roboto+Slab:wght@500&family=Roboto:wght@300;900&display=swap');
+
+*{
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    padding: 0;
+    box-sizing: border-box;
+}
+section{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 80px;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(to right, #353536, rgb(41, 39, 39), #2c2b2b, #252424);
+}
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 35px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(to right, #434344, rgb(58, 55, 55), #363535, #302d2d);
+}
+header ul{
+    left: 2%;
+    position: relative;
+    display: flex;
+}
+header ul li{
+    list-style: none;
+}
+header ul li a{
+    display: inline-block;
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+    margin-left: 40px;
+    text-decoration: none;
+    font-family: 'Inter', sans-serif;
+}
+.btn_inicial{
+    background-color: #83a075;
+    border-radius: 5px;
+    color: #ffff;
+    padding: 7px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.btn_account{
+    border: 2px #86a576 solid;
+    background: #8aaa79;
+    border-radius: 7px;
+    width: 120px;
+    margin-left: 35px;
+    font-size: 14px;
+    height: 37px;
+    font-family: 'Inter', sans-serif;
+    color: white;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+.btn_account:hover{
+    background: transparent;
+    border: 2px solid white;
+    transition: 0.6s all;
+}
+.container{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10%;
+}
+.textBox{
+    position: relative;
+    max-width: 600px;
+}
+h2{
+    color: #ffff;
+    font-size: 3.4em;
+    line-height: 1.4em;
+    font-weight: 600;
+    font-family: 'Inter', sans-serif;
+}
+p{
+    color: #ffff;
+    font-family: 'Inter', sans-serif;
+}
+.card-login{
+    padding-top: 1%;
+}
+input{
+    margin-top: 20px;
+    display: flex;
+    width: 370px;
+    height: 40px;
+    border-radius: 11px;
+    border: none;
+    outline: none;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    font-family: 'Inter', sans-serif;
+}
+.btn-entrar{
+    position: relative;
+    left: -0.5%;
+    margin-top: 1.8%;
+    width: 370px;
+    height: 43px;
+    border: 2px #86a576 solid;
+    background: #8aaa79;
+    border-radius: 11px;
+    font-size: 17px;
+    font-weight: 500;
+    font-family: 'Inter', sans-serif;
+    color: white;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+.btn-entrar:hover{
+    background: transparent;
+    border: 2px solid white;
+    transition: 0.6s all;
+}
+h6{
+    color: #eeeeee;
+    padding-top: 1%;
+    margin-left: 8%;
+    font-weight: 500;
+    font-family: 'Inter', sans-serif;
+}
+.card-login a{
+    color: #3160facc;
+    font-weight: 600;
+    margin-left: 5px;
+    font-family: sans-serif;
+}
+img{
+    position: absolute;
+    margin-top: 3.3%;
+    margin-left: 57%;
+    border-radius: 100px;
+    width: 480px;
+}
+.circle{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, #7e9c6f, #8aa77c, #8db47b, #98c284);
+    clip-path: circle(600px at right 800px);
+}
+a:hover{
+    color: #9bbd8b;
+    transition: 0.3s all;
+}

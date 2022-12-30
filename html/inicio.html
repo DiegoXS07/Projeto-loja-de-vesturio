@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/inicio.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <title>Página inicial</title>
+</head>
+<body>
+<!-- Inicio -->
+    <header>
+        <div class="cabecalho_inicial">
+            <div class="menu">
+            <img class="icon_menu" src="/Imagens/icons/menu.png" alt="">
+            </div>
+            <div>
+                <input class="search" type="text" name="" id="" placeholder="O que você está procurando?">
+                <img class="icon_procurar" src="/Imagens/icons/procurar.svg" alt="">
+                <div class="icons_inicial">
+                    <img class="icon_mensagens"src="/Imagens/icons/mensagens.png" alt="">
+                    <img class="icon_carrinho"src="/Imagens/icons/carrinho.svg" alt="">
+                </div>
+                <img class="circle" src="data:image/jpeg;base64,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" alt="">
+            </div>
+<!-- Cards de produtos -->
+     </div>
+        <div class="elements">
+            <div class="card">
+                <div class="card-img"><img class="products" src="/Imagens/products/camiseta-masculina-malwe.jpg" alt=""></div>
+                <div class="card-info">
+                <p class="text-title"> Camiseta Masculina Cinza</p>
+                <p class="text-body">Camiseta básica masculina tecido, leve e com bom caimento - 83% Algodão e 17% Poliéster.</p>
+                </div>
+                <div class="card-footer">
+                <span class="text-title">R$59,90</span>
+                <div class="card-button">
+                <svg class="svg-icon" viewBox="0 0 20 20" fill="white">
+                    <path d="M17.72,5.011H8.026c-0.271,0-0.49,0.219-0.49,0.489c0,0.271,0.219,0.489,0.49,0.489h8.962l-1.979,4.773H6.763L4.935,5.343C4.926,5.316,4.897,5.309,4.884,5.286c-0.011-0.024,0-0.051-0.017-0.074C4.833,5.166,4.025,4.081,2.33,3.908C2.068,3.883,1.822,4.075,1.795,4.344C1.767,4.612,1.962,4.853,2.231,4.88c1.143,0.118,1.703,0.738,1.808,0.866l1.91,5.661c0.066,0.199,0.252,0.333,0.463,0.333h8.924c0.116,0,0.22-0.053,0.308-0.128c0.027-0.023,0.042-0.048,0.063-0.076c0.026-0.034,0.063-0.058,0.08-0.099l2.384-5.75c0.062-0.151,0.046-0.323-0.045-0.458C18.036,5.092,17.883,5.011,17.72,5.011z"></path>
+                    <path d="M8.251,12.386c-1.023,0-1.856,0.834-1.856,1.856s0.833,1.853,1.856,1.853c1.021,0,1.853-0.83,1.853-1.853S9.273,12.386,8.251,12.386z M8.251,15.116c-0.484,0-0.877-0.393-0.877-0.874c0-0.484,0.394-0.878,0.877-0.878c0.482,0,0.875,0.394,0.875,0.878C9.126,14.724,8.733,15.116,8.251,15.116z"></path>
+                    <path d="M13.972,12.386c-1.022,0-1.855,0.834-1.855,1.856s0.833,1.853,1.855,1.853s1.854-0.83,1.854-1.853S14.994,12.386,13.972,12.386z M13.972,15.116c-0.484,0-0.878-0.393-0.878-0.874c0-0.484,0.394-0.878,0.878-0.878c0.482,0,0.875,0.394,0.875,0.878C14.847,14.724,14.454,15.116,13.972,15.116z"></path>
+                </svg>
+                </div>
+                <div class="card-button2">
+                <img class="heart" src="/Imagens/icons/coracao.png" alt="">
+                </div>
+            </div></div>
+
+            <div class="card_2">
+                <div class="card-img"><img class="products" src="/Imagens/products/calca-preta-masculina.jpg" alt=""></div>
+                <div class="card-info">
+                <p class="text-title">Calça Jeans Skinny</p>
+                <p class="text-body">Calça Jeans Skinny Preta Masculina Lisa Original Lycra Elastano Premium - Estampa Simples</p>
+                </div>
+                <div class="card-footer">
+                <span class="text-title">R$199,90</span>
+                <div class="card-button">
+                <svg class="svg-icon" viewBox="0 0 20 20" fill="white">
+                    <path d="M17.72,5.011H8.026c-0.271,0-0.49,0.219-0.49,0.489c0,0.271,0.219,0.489,0.49,0.489h8.962l-1.979,4.773H6.763L4.935,5.343C4.926,5.316,4.897,5.309,4.884,5.286c-0.011-0.024,0-0.051-0.017-0.074C4.833,5.166,4.025,4.081,2.33,3.908C2.068,3.883,1.822,4.075,1.795,4.344C1.767,4.612,1.962,4.853,2.231,4.88c1.143,0.118,1.703,0.738,1.808,0.866l1.91,5.661c0.066,0.199,0.252,0.333,0.463,0.333h8.924c0.116,0,0.22-0.053,0.308-0.128c0.027-0.023,0.042-0.048,0.063-0.076c0.026-0.034,0.063-0.058,0.08-0.099l2.384-5.75c0.062-0.151,0.046-0.323-0.045-0.458C18.036,5.092,17.883,5.011,17.72,5.011z"></path>
+                    <path d="M8.251,12.386c-1.023,0-1.856,0.834-1.856,1.856s0.833,1.853,1.856,1.853c1.021,0,1.853-0.83,1.853-1.853S9.273,12.386,8.251,12.386z M8.251,15.116c-0.484,0-0.877-0.393-0.877-0.874c0-0.484,0.394-0.878,0.877-0.878c0.482,0,0.875,0.394,0.875,0.878C9.126,14.724,8.733,15.116,8.251,15.116z"></path>
+                    <path d="M13.972,12.386c-1.022,0-1.855,0.834-1.855,1.856s0.833,1.853,1.855,1.853s1.854-0.83,1.854-1.853S14.994,12.386,13.972,12.386z M13.972,15.116c-0.484,0-0.878-0.393-0.878-0.874c0-0.484,0.394-0.878,0.878-0.878c0.482,0,0.875,0.394,0.875,0.878C14.847,14.724,14.454,15.116,13.972,15.116z"></path>
+                </svg>
+                </div>
+                <div class="card-button2">
+                    <img class="heart" src="/Imagens/icons/coracao.png" alt="">
+                    </div>
+            </div></div>
+
+            <div class="card_3">
+                <div class="card-img"><img class="products" src="https://cf.shopee.com.br/file/f32a413e0a050291f40e96d2a9abb844" alt=""></div>
+                <div class="card-info">
+                <p class="text-title">Calças Jeans Feminina</p>
+                <p class="text-body">Calças Jeans Feminina com lycra (elastano) Cintura Alta - Material Denim</p>
+                </div>
+                <div class="card-footer">
+                <span class="text-title">R$149,90</span>
+                <div class="card-button">
+                <svg class="svg-icon" viewBox="0 0 20 20" fill="white">
+                    <path d="M17.72,5.011H8.026c-0.271,0-0.49,0.219-0.49,0.489c0,0.271,0.219,0.489,0.49,0.489h8.962l-1.979,4.773H6.763L4.935,5.343C4.926,5.316,4.897,5.309,4.884,5.286c-0.011-0.024,0-0.051-0.017-0.074C4.833,5.166,4.025,4.081,2.33,3.908C2.068,3.883,1.822,4.075,1.795,4.344C1.767,4.612,1.962,4.853,2.231,4.88c1.143,0.118,1.703,0.738,1.808,0.866l1.91,5.661c0.066,0.199,0.252,0.333,0.463,0.333h8.924c0.116,0,0.22-0.053,0.308-0.128c0.027-0.023,0.042-0.048,0.063-0.076c0.026-0.034,0.063-0.058,0.08-0.099l2.384-5.75c0.062-0.151,0.046-0.323-0.045-0.458C18.036,5.092,17.883,5.011,17.72,5.011z"></path>
+                    <path d="M8.251,12.386c-1.023,0-1.856,0.834-1.856,1.856s0.833,1.853,1.856,1.853c1.021,0,1.853-0.83,1.853-1.853S9.273,12.386,8.251,12.386z M8.251,15.116c-0.484,0-0.877-0.393-0.877-0.874c0-0.484,0.394-0.878,0.877-0.878c0.482,0,0.875,0.394,0.875,0.878C9.126,14.724,8.733,15.116,8.251,15.116z"></path>
+                    <path d="M13.972,12.386c-1.022,0-1.855,0.834-1.855,1.856s0.833,1.853,1.855,1.853s1.854-0.83,1.854-1.853S14.994,12.386,13.972,12.386z M13.972,15.116c-0.484,0-0.878-0.393-0.878-0.874c0-0.484,0.394-0.878,0.878-0.878c0.482,0,0.875,0.394,0.875,0.878C14.847,14.724,14.454,15.116,13.972,15.116z"></path>
+                </svg>
+                </div>
+                <div class="card-button2">
+                    <img class="heart" src="/Imagens/icons/coracao.png" alt="">
+                    </div>
+            </div></div>
+
+            <div class="card_4">
+                <div class="card-img"><img class="products" src="https://www.galaxcommerce.com.br/sistema/upload/308/produtos/camisa-100-poliamida-com-proteCAo-uv-manga-longa-feminina_2020-09-04_09-58-57_0_195.png" alt=""></div>
+                <div class="card-info">
+                <p class="text-title">Camisa feminina (Azul)</p>
+                <p class="text-body">Camisa dry fit feminina - na cor azul claro, composição 100% polimiada com proteção uv</p>
+                </div>
+                <div class="card-footer">
+                <span class="text-title">R$89,90</span>
+                <div class="card-button">
+                <svg class="svg-icon" viewBox="0 0 20 20" fill="white">
+                    <path d="M17.72,5.011H8.026c-0.271,0-0.49,0.219-0.49,0.489c0,0.271,0.219,0.489,0.49,0.489h8.962l-1.979,4.773H6.763L4.935,5.343C4.926,5.316,4.897,5.309,4.884,5.286c-0.011-0.024,0-0.051-0.017-0.074C4.833,5.166,4.025,4.081,2.33,3.908C2.068,3.883,1.822,4.075,1.795,4.344C1.767,4.612,1.962,4.853,2.231,4.88c1.143,0.118,1.703,0.738,1.808,0.866l1.91,5.661c0.066,0.199,0.252,0.333,0.463,0.333h8.924c0.116,0,0.22-0.053,0.308-0.128c0.027-0.023,0.042-0.048,0.063-0.076c0.026-0.034,0.063-0.058,0.08-0.099l2.384-5.75c0.062-0.151,0.046-0.323-0.045-0.458C18.036,5.092,17.883,5.011,17.72,5.011z"></path>
+                    <path d="M8.251,12.386c-1.023,0-1.856,0.834-1.856,1.856s0.833,1.853,1.856,1.853c1.021,0,1.853-0.83,1.853-1.853S9.273,12.386,8.251,12.386z M8.251,15.116c-0.484,0-0.877-0.393-0.877-0.874c0-0.484,0.394-0.878,0.877-0.878c0.482,0,0.875,0.394,0.875,0.878C9.126,14.724,8.733,15.116,8.251,15.116z"></path>
+                    <path d="M13.972,12.386c-1.022,0-1.855,0.834-1.855,1.856s0.833,1.853,1.855,1.853s1.854-0.83,1.854-1.853S14.994,12.386,13.972,12.386z M13.972,15.116c-0.484,0-0.878-0.393-0.878-0.874c0-0.484,0.394-0.878,0.878-0.878c0.482,0,0.875,0.394,0.875,0.878C14.847,14.724,14.454,15.116,13.972,15.116z"></path>
+                </svg>
+                </div>
+                <div class="card-button2">
+                    <img class="heart" src="/Imagens/icons/coracao.png" alt="">
+                    </div>
+            </div></div>
+
+            <div class="card_5" data-aos="fade-in">
+                <div class="card-img"><img class="products" src="/Imagens/products/calca_jogger.jpg" alt=""></div>
+                <div class="card-info">
+                <p class="text-title">Calça Jogger Moletom</p>
+                <p class="text-body">Calça jogger lisa de moletom (preto) Feminina - Tecido Principal: 50% CO e 50% PES</p>
+                </div>
+                <div class="card-footer">
+                <span class="text-title">R$59,90 </span>
+                <div class="card-button">
+                <svg class="svg-icon" viewBox="0 0 20 20" fill="white">
+                    <path d="M17.72,5.011H8.026c-0.271,0-0.49,0.219-0.49,0.489c0,0.271,0.219,0.489,0.49,0.489h8.962l-1.979,4.773H6.763L4.935,5.343C4.926,5.316,4.897,5.309,4.884,5.286c-0.011-0.024,0-0.051-0.017-0.074C4.833,5.166,4.025,4.081,2.33,3.908C2.068,3.883,1.822,4.075,1.795,4.344C1.767,4.612,1.962,4.853,2.231,4.88c1.143,0.118,1.703,0.738,1.808,0.866l1.91,5.661c0.066,0.199,0.252,0.333,0.463,0.333h8.924c0.116,0,0.22-0.053,0.308-0.128c0.027-0.023,0.042-0.048,0.063-0.076c0.026-0.034,0.063-0.058,0.08-0.099l2.384-5.75c0.062-0.151,0.046-0.323-0.045-0.458C18.036,5.092,17.883,5.011,17.72,5.011z"></path>
+                    <path d="M8.251,12.386c-1.023,0-1.856,0.834-1.856,1.856s0.833,1.853,1.856,1.853c1.021,0,1.853-0.83,1.853-1.853S9.273,12.386,8.251,12.386z M8.251,15.116c-0.484,0-0.877-0.393-0.877-0.874c0-0.484,0.394-0.878,0.877-0.878c0.482,0,0.875,0.394,0.875,0.878C9.126,14.724,8.733,15.116,8.251,15.116z"></path>
+                    <path d="M13.972,12.386c-1.022,0-1.855,0.834-1.855,1.856s0.833,1.853,1.855,1.853s1.854-0.83,1.854-1.853S14.994,12.386,13.972,12.386z M13.972,15.116c-0.484,0-0.878-0.393-0.878-0.874c0-0.484,0.394-0.878,0.878-0.878c0.482,0,0.875,0.394,0.875,0.878C14.847,14.724,14.454,15.116,13.972,15.116z"></path>
+                </svg>
+                </div>
+                <div class="card-button2">
+                    <img class="heart" src="/Imagens/icons/coracao.png" alt="">
+                    </div>
+            </div></div>
+
+            <div class="card_6" data-aos="fade-in">
+                <div class="card-img"><img class="products" src="/Imagens/products/vestido_feminino.jpg" alt=""></div>
+                <div class="card-info">
+                <p class="text-title">Vestido (Azul marinho)</p>
+                <p class="text-body">Vestido com bojo e detalhe em tiras  | poliamida excelente! | - 90% poliamida 10% elastano</p>
+                </div>
+                <div class="card-footer">
+                <span class="text-title">R$39,99</span>
+                <div class="card-button">
+                <svg class="svg-icon" viewBox="0 0 20 20" fill="white">
+                    <path d="M17.72,5.011H8.026c-0.271,0-0.49,0.219-0.49,0.489c0,0.271,0.219,0.489,0.49,0.489h8.962l-1.979,4.773H6.763L4.935,5.343C4.926,5.316,4.897,5.309,4.884,5.286c-0.011-0.024,0-0.051-0.017-0.074C4.833,5.166,4.025,4.081,2.33,3.908C2.068,3.883,1.822,4.075,1.795,4.344C1.767,4.612,1.962,4.853,2.231,4.88c1.143,0.118,1.703,0.738,1.808,0.866l1.91,5.661c0.066,0.199,0.252,0.333,0.463,0.333h8.924c0.116,0,0.22-0.053,0.308-0.128c0.027-0.023,0.042-0.048,0.063-0.076c0.026-0.034,0.063-0.058,0.08-0.099l2.384-5.75c0.062-0.151,0.046-0.323-0.045-0.458C18.036,5.092,17.883,5.011,17.72,5.011z"></path>
+                    <path d="M8.251,12.386c-1.023,0-1.856,0.834-1.856,1.856s0.833,1.853,1.856,1.853c1.021,0,1.853-0.83,1.853-1.853S9.273,12.386,8.251,12.386z M8.251,15.116c-0.484,0-0.877-0.393-0.877-0.874c0-0.484,0.394-0.878,0.877-0.878c0.482,0,0.875,0.394,0.875,0.878C9.126,14.724,8.733,15.116,8.251,15.116z"></path>
+                    <path d="M13.972,12.386c-1.022,0-1.855,0.834-1.855,1.856s0.833,1.853,1.855,1.853s1.854-0.83,1.854-1.853S14.994,12.386,13.972,12.386z M13.972,15.116c-0.484,0-0.878-0.393-0.878-0.874c0-0.484,0.394-0.878,0.878-0.878c0.482,0,0.875,0.394,0.875,0.878C14.847,14.724,14.454,15.116,13.972,15.116z"></path></svg>
+                </div>
+                <div class="card-button2">
+                    <img class="heart" src="/Imagens/icons/coracao.png" alt="">
+                    </div>
+            </div></div>
+
+            <div class="card_7" data-aos="fade-in">
+                <div class="card-img"><img class="products" src="/Imagens/products/Moletom_adidas.jpg" alt=""></div>
+                <div class="card-info">
+                <p class="text-title">Moletom Adidas Trefoil</p>
+                <p class="text-body">O Moletom Adidas Trefoil, com o estilo icônico 1972 centralizado na frente - 100% Algodão.</p>
+                </div>
+                <div class="card-footer">
+                <span class="text-title">R$299,99</span>
+                <div class="card-button">
+                <svg class="svg-icon" viewBox="0 0 20 20" fill="white">
+                    <path d="M17.72,5.011H8.026c-0.271,0-0.49,0.219-0.49,0.489c0,0.271,0.219,0.489,0.49,0.489h8.962l-1.979,4.773H6.763L4.935,5.343C4.926,5.316,4.897,5.309,4.884,5.286c-0.011-0.024,0-0.051-0.017-0.074C4.833,5.166,4.025,4.081,2.33,3.908C2.068,3.883,1.822,4.075,1.795,4.344C1.767,4.612,1.962,4.853,2.231,4.88c1.143,0.118,1.703,0.738,1.808,0.866l1.91,5.661c0.066,0.199,0.252,0.333,0.463,0.333h8.924c0.116,0,0.22-0.053,0.308-0.128c0.027-0.023,0.042-0.048,0.063-0.076c0.026-0.034,0.063-0.058,0.08-0.099l2.384-5.75c0.062-0.151,0.046-0.323-0.045-0.458C18.036,5.092,17.883,5.011,17.72,5.011z"></path>
+                    <path d="M8.251,12.386c-1.023,0-1.856,0.834-1.856,1.856s0.833,1.853,1.856,1.853c1.021,0,1.853-0.83,1.853-1.853S9.273,12.386,8.251,12.386z M8.251,15.116c-0.484,0-0.877-0.393-0.877-0.874c0-0.484,0.394-0.878,0.877-0.878c0.482,0,0.875,0.394,0.875,0.878C9.126,14.724,8.733,15.116,8.251,15.116z"></path>
+                    <path d="M13.972,12.386c-1.022,0-1.855,0.834-1.855,1.856s0.833,1.853,1.855,1.853s1.854-0.83,1.854-1.853S14.994,12.386,13.972,12.386z M13.972,15.116c-0.484,0-0.878-0.393-0.878-0.874c0-0.484,0.394-0.878,0.878-0.878c0.482,0,0.875,0.394,0.875,0.878C14.847,14.724,14.454,15.116,13.972,15.116z"></path>
+                </svg>
+                </div>
+                <div class="card-button2">
+                    <img class="heart" src="/Imagens/icons/coracao.png" alt=""></div>
+            </div></div>
+
+            <div class="card_8" data-aos="fade-in">
+                <div class="card-img"><img class="products" src="/Imagens/products/cropped-vermelho.jpg" alt=""></div>
+                <div class="card-info">
+                <p class="text-title">Cropped Vermelho </p>
+                <p class="text-body">Cropped confeccionado em linho, Peça com modelagem justa e confortável.</p>
+                </div>
+                <div class="card-footer">
+                <span class="text-title">R$199,99</span>
+                <div class="card-button">
+                <svg class="svg-icon" viewBox="0 0 20 20" fill="white">
+                    <path d="M17.72,5.011H8.026c-0.271,0-0.49,0.219-0.49,0.489c0,0.271,0.219,0.489,0.49,0.489h8.962l-1.979,4.773H6.763L4.935,5.343C4.926,5.316,4.897,5.309,4.884,5.286c-0.011-0.024,0-0.051-0.017-0.074C4.833,5.166,4.025,4.081,2.33,3.908C2.068,3.883,1.822,4.075,1.795,4.344C1.767,4.612,1.962,4.853,2.231,4.88c1.143,0.118,1.703,0.738,1.808,0.866l1.91,5.661c0.066,0.199,0.252,0.333,0.463,0.333h8.924c0.116,0,0.22-0.053,0.308-0.128c0.027-0.023,0.042-0.048,0.063-0.076c0.026-0.034,0.063-0.058,0.08-0.099l2.384-5.75c0.062-0.151,0.046-0.323-0.045-0.458C18.036,5.092,17.883,5.011,17.72,5.011z"></path>
+                    <path d="M8.251,12.386c-1.023,0-1.856,0.834-1.856,1.856s0.833,1.853,1.856,1.853c1.021,0,1.853-0.83,1.853-1.853S9.273,12.386,8.251,12.386z M8.251,15.116c-0.484,0-0.877-0.393-0.877-0.874c0-0.484,0.394-0.878,0.877-0.878c0.482,0,0.875,0.394,0.875,0.878C9.126,14.724,8.733,15.116,8.251,15.116z"></path>
+                    <path d="M13.972,12.386c-1.022,0-1.855,0.834-1.855,1.856s0.833,1.853,1.855,1.853s1.854-0.83,1.854-1.853S14.994,12.386,13.972,12.386z M13.972,15.116c-0.484,0-0.878-0.393-0.878-0.874c0-0.484,0.394-0.878,0.878-0.878c0.482,0,0.875,0.394,0.875,0.878C14.847,14.724,14.454,15.116,13.972,15.116z"></path>
+                </svg>
+                </div>
+                <div class="card-button2">
+                    <img class="heart" src="/Imagens/icons/coracao.png" alt="">
+                    </div>
+            </div></div>
+        </header>
+    <section>
+<!-- Card de avaliação -->
+    <h1  data-aos="fade-up">Feedback</h1>
+    <div class="card_avaliacao" data-aos="fade-up">
+        <div class="cards"  data-aos="fade-up">
+            <div class="card_user">
+                <img class="user" src="https://i1.rgstatic.net/ii/profile.image/1099680469528576-1639195663358_Q512/Wanderson-Silva-14.jpg" alt="">
+                <h3>W. Vasconcelos</h3>
+                    <img class="star" src="/Imagens/icons/estrelas.png" alt="">
+
+                <p class="card_paragrafo">Produto parecido com o anúncio. Entrega antes da data prevista. Qualidade da malha é boa. Os tamanhos, os números e os nomes corretos. Os tamanhos corresponderam o caimento. Bom custo benefício.</p>
+            </div>
+            <div class="card_user">
+                <img class="user" src="/Imagens/users/foto_sekeff.png" alt="">
+                <h3>Ricardo Sekeff</h3>
+                    <img class="star" src="/Imagens/icons/estrelas.png" alt="">
+
+                <p class="card_paragrafo">Altamente satisfeito com a compra, produto excelente, tem seus detalhes é claro, mas aceitáveis, qualidade digna de aplausos, camisa muito bonita.
+                    Recomendo.</p>
+            </div>
+            <div class="card_user">
+                <img class="user" src="https://media-exp1.licdn.com/dms/image/C4E03AQGhGemEQO5bww/profile-displayphoto-shrink_800_800/0/1635771316548?e=2147483647&v=beta&t=u5yy9OHtXRt2y6Fz4Rm2EEXwtrV2tFwCax5O7qlC4ig" alt="">
+                <h3>Mayllon Veras</h3>
+                    <img class="star" src="/Imagens/icons/estrelas.png" alt="">
+                <p class="card_paragrafo">Qualidade da Camiseta é incrível, Primeira linha muito bem feita, cada acabamento perfeito. Podem comprar sem medo, pois não irá se arrepender, muita qualidade. <b>Nota 10!</b></p>
+            </div>
+        </div></div>
+        <div class="custom-shape-divider-bottom-1670471541">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
+            </svg>
+        </div>
+    </section>
+<!-- Rodapé -->
+    <footer>
+        <div class="container">
+            <ul>
+                <h3>Hive Line Office</h3>
+                <p> Lorem ipsum dolor sit amet. Id placeat deleniti id debitis ducimus ut earum voluptatem ut expedita dolores id rerum perspiciatis id corporis deserunt. 
+                </p>
+                <div class="redes-socias">
+                    <img src="/Imagens/logos/facebook.png" alt="facebook">
+                    <img src="/Imagens/logos/twitter.png" alt="twitter">
+                    <img src="/Imagens/logos/instagram.png" alt="instagram">
+                    <img src="/Imagens/logos/linkedin.png" alt="linkedin">
+                </div>
+            </ul>
+            <ul>
+                <h3>Link</h3>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Preços</a></li>
+                <li><a href="#">Baixar</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Serviços</a></li>
+            </ul>
+            <ul>
+                <h3>Suporte</h3>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Como Funciona</a></li>
+                <li><a href="#">Características</a></li>
+                <li><a href="#">Contato</a></li>
+                <li><a href="#">Termos de Uso</a></li>
+            </ul>
+            <ul>
+                <h3>Contatos</h3>
+                <li>
+                    <p>+55 (86) 98888-9999</p>
+                </li>
+                <li>
+                    <p>+55 (86) 97777-8888</p>
+                </li>
+                <li>
+                    <p>emailempresa@gmail.com</p>
+                </li>
+                <li>
+                    <p>Brasil</p>
+                </li>
+            </ul>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 800,
+      });</script>
+</body>
+</html>
